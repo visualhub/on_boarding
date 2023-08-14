@@ -33,6 +33,9 @@ class OnBoardingScreenWidget extends StatelessWidget {
           ),
           Text(model.onBoardingCounter,
               style: Theme.of(context).textTheme.labelLarge),
+          const SizedBox(
+            height: 50,
+          )
         ],
       ),
     );

@@ -20,9 +20,8 @@ class OnBoarding extends StatelessWidget {
               builder: (context) {
                 return LiquidSwipe(
                   slideIconWidget: const Icon(Icons.arrow_back_ios),
-                  enableSideReveal: false,
                   onPageChangeCallback: oBcontroller.onPageChangeCallback,
-                  waveType: WaveType.circularReveal,
+                  waveType: WaveType.liquidReveal,
                   pages: oBcontroller.pages,
                   liquidController: oBcontroller.controller,
                 );
@@ -39,7 +38,7 @@ class OnBoarding extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 150,
+              bottom: 75,
               child: AnimatedSmoothIndicator(
                 duration: const Duration(milliseconds: 100),
                 activeIndex: oBcontroller.currentPage.value,
@@ -50,16 +49,16 @@ class OnBoarding extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              bottom: 30,
-              right: 30,
-              child: FloatingActionButton(
-                onPressed: () {
-                  oBcontroller.nextOnBoarding();
-                },
-                child: const Icon(Icons.arrow_forward_ios),
-              ),
-            ),
+            // Positioned(
+            //   bottom: 30,
+            //   right: 30,
+            //   child: FloatingActionButton(
+            //     onPressed: () {
+            //       oBcontroller.nextOnBoarding();
+            //     },
+            //     child: const Icon(Icons.arrow_forward_ios),
+            //   ),
+            // ),
           ],
         ),
       ),
