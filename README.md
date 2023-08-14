@@ -19,12 +19,17 @@ lib/
         features/
             authentication/
                 models/
+                    on_boarding_model/
+                    sign_up_model/
+                    sign_in_model/
                 screens/
-                    on_boarding/
-                        models/
-                        screens/
-                        controllers/
+                    on_boarding_screen/
+                    sign_up_screen/
+                    sign_in_screen/
                 controllers/
+                    on_boarding_controller/
+                    sign_up_controller/
+                    sign_in_controller/
         common_widgets/
         utils/
         localization/
